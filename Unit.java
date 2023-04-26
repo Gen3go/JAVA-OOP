@@ -1,4 +1,5 @@
-public class Unit {
+
+public class Unit implements GameInterface{
     protected String name, usedItem;
     protected int health, speed;
     protected float inflictedIiron;
@@ -19,8 +20,26 @@ public class Unit {
 
     void attack(){
 
+    }
 
+    @Override
+    public int getHealth() {
+        return health;
+    }
+
+
+    @Override
+    public String getInfo() {
+
+        return null;
+    }
+
+    @Override
+    public void step() {
+
+        
     }
     
+
 }
 
