@@ -6,4 +6,22 @@ public class Spearmen extends Unit_sniper_cross_spearman{
     void restoreSpearFromMoney(){
         
     }
+
+    @Override
+    public String toString(){
+        return "Копейщик";
+    }
+    
+    @Override
+    public int getHealth() {
+        return health;
+    }
+
+    @Override
+    public String getInfo() {
+        return name + " Используемый предмет: " + " Здоровье: "+ health +
+        " Скорость: " + speed + " Наносимый урон: " + inflictedIiron + 
+        " Урон: " + damage + " Деньги: " + " Меткость: " + accuracy;
+    }
+
 }
