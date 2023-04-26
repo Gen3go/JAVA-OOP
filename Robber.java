@@ -10,5 +10,21 @@ class Robber extends Unit_robber_witch{
 
     }
     
+    @Override
+    public String toString(){
+        return "Разбойник";
+    }
+    
+    @Override
+    public int getHealth() {
+        return health;
+    }
+
+    @Override
+    public String getInfo() {
+        return name + " Используемый предмет: " + " Здоровье: "+ health +
+        " Скорость: " + speed + " Наносимый урон: " + inflictedIiron + 
+        " Урон: " + damage + " Деньги: " + " Магия: " + magic;
+    }
 
 }
