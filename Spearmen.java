@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class Spearmen extends Unit_sniper_cross_spearman{
-    Spearmen(String name, String usedItem, int health, int speed, float inflictedIiron, int damage, int money, int accuracy){
-        super("name", "spear", 100, 30, 50, 1, 100, 10);
+    Spearmen(ArrayList<Unit> team, String name, String usedItem, int health, int intiative, float inflictedIiron, int damage, int money, int accuracy){
+        super(team, "Namey", "spear", 100, 30, 50, 1, 100, 10);
     }
 
     void restoreSpearFromMoney(){
@@ -20,7 +22,7 @@ public class Spearmen extends Unit_sniper_cross_spearman{
     @Override
     public String getInfo() {
         return name + " Используемый предмет: " + " Здоровье: "+ health +
-        " Скорость: " + speed + " Наносимый урон: " + inflictedIiron + 
+        " Скорость: " + intiative + " Наносимый урон: " + inflictedIiron + 
         " Урон: " + damage + " Деньги: " + " Меткость: " + accuracy;
     }
 
