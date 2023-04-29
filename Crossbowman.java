@@ -10,13 +10,10 @@ public class Crossbowman extends Unit_sniper_cross_spearman{
         return "Арбалетчик";
 
     }
-
     @Override
     public String getInfo() {
         return name + " Используемый предмет: " + " Здоровье: "+ health +
         " Скорость: " + intiative + " Наносимый урон: " + inflictedIiron + 
         " Урон: " + damage + " Деньги: " + " Магия: " + accuracy;
     }
-
-
 }
