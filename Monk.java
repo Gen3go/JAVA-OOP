@@ -19,12 +19,10 @@ public class Monk extends Unit_peasant_monk {
     public String toString(){
         return "Монах";
     }
-
     @Override
     public int getHealth() {
         return health;
     }
-
     @Override
     public String getInfo() {
         return name + " Используемый предмет: " + " Здоровье: "+ health +
