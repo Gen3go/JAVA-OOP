@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class Sniper extends Unit_sniper_cross_spearman{
 
-    Sniper(String name, String usedItem, int health, int speed, float inflictedIiron, int damage, int money, int accuracy){
-        super("name", "rifle", 100, 50, 50, 1, 100, 30);
+    Sniper(ArrayList<Unit> team, String name, String usedItem, int health, int intiative, float inflictedIiron, int damage, int money, int accuracy){
+        super(team, "Aaron", "rifle", 100, 50, 50, 1, 100, 30);
     }
 
     @Override
@@ -17,7 +19,7 @@ public class Sniper extends Unit_sniper_cross_spearman{
     @Override
     public String getInfo() {
         return name + " Используемый предмет: " + " Здоровье: "+ health +
-        " Скорость: " + speed + " Наносимый урон: " + inflictedIiron + 
+        " Скорость: " + intiative + " Наносимый урон: " + inflictedIiron + 
         " Урон: " + damage + " Деньги: " + " Меткость: " + accuracy;
     }
 
