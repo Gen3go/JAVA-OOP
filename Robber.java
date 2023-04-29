@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 class Robber extends Unit_robber_witch{
 
-    Robber(String name, String usedItem, int health, int speed, float inflictedIiron, int damage, int money, float magic){
-        super("name", "knife", 100, 50, 70, 2, 100, 0);
+    Robber(ArrayList<Unit> team, String name, String usedItem, int health, int intiative, float inflictedIiron, int damage, int money, float magic){
+        super(team, "Avile", "knife", 100, 50, 70, 2, 100, 0);
     }
     void stealThings(){
 
@@ -23,8 +25,8 @@ class Robber extends Unit_robber_witch{
     @Override
     public String getInfo() {
         return name + " Используемый предмет: " + " Здоровье: "+ health +
-        " Скорость: " + speed + " Наносимый урон: " + inflictedIiron + 
-        " Урон: " + damage + " Деньги: " + " Магия: " + magic;
+        " Скорость: " + intiative + " Наносимый урон: " + inflictedIiron + 
+        " Урон: " + damage + " Деньги: " + money;
     }
 
 }
