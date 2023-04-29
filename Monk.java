@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 public class Monk extends Unit_peasant_monk {
 
 
     public static char[] getInfo;
 
-    Monk(String name, String usedItem, int health, int speed, float inflictedIiron, int damage, int money, float thePowerOfTheEarth, int powerOfKind){
+    Monk(ArrayList<Unit> team, String name, String usedItem, int health, int intiative, float inflictedIiron, int damage, int money, float thePowerOfTheEarth, int powerOfKind){
 
-        super("Neof", "snag", 100, 10, 5, 1, 100, 10, 10);
+        super(team, "Neof", "snag", 100, 10, 5, 1, 100, 10, 10);
 
     }
 
@@ -26,9 +28,8 @@ public class Monk extends Unit_peasant_monk {
     @Override
     public String getInfo() {
         return name + " Используемый предмет: " + " Здоровье: "+ health +
-        " Скорость: " + speed + " Наносимый урон: " + inflictedIiron + 
-        " Урон: " + damage + " Деньги: " + " Сила земли: " + thePowerOfTheEarth + 
-        " Сила доброты: " + powerOfKind;
+        " Скорость: " + intiative + " Наносимый урон: " + inflictedIiron + 
+        " Урон: " + damage + " Деньги: "  + " Сила доброты: " + powerOfKind;
     }
 
     
