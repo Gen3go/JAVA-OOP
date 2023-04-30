@@ -3,9 +3,9 @@ import java.util.ArrayList;
 public class Peasant extends Unit_peasant_monk {
 
 
-    Peasant(ArrayList<Unit> team, String name, int health, int money){
+    Peasant(ArrayList<Unit> team, String name, String usedItem, int health, int money, int intiative, float inflictedIiron, int damage, float thePowerOfTheEarth, int powerOfKind){
 
-        super(team, name, health, money);
+        super(team, name, usedItem, health, money, intiative, inflictedIiron, damage, thePowerOfTheEarth, powerOfKind);
     }
 
     @Override
@@ -21,9 +21,8 @@ public class Peasant extends Unit_peasant_monk {
 
     @Override
     public String getInfo() {
-        return name + " Используемый предмет: " + " Здоровье: "+ health +
-        " Скорость: " + intiative + " Наносимый урон: " + inflictedIiron + 
-        " Урон: " + damage + " Деньги: " + " Сила земли: " + thePowerOfTheEarth;
+        return name + " Иван " + " Здоровье: "+ health +
+        " Деньги: " + money + "Сила земли: " + thePowerOfTheEarth;
     }
 
     
