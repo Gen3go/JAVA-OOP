@@ -9,7 +9,7 @@ public class Unit implements GameInterface, Comparable{
     protected int damage;
     protected int money;
 
-    public Unit(ArrayList<Unit> team, String name, String usedItem, int health, int speed, float inflictedIiron, int damage, int money) {
+    public Unit(ArrayList<Unit> team, String name, String usedItem, int health,int money, float inflictedIiron3, float inflictedIiron, float inflictedIiron2) {
         this.team = team;
         this.name = name;
         this.usedItem = usedItem;
@@ -18,7 +18,7 @@ public class Unit implements GameInterface, Comparable{
         if(new Random().nextBoolean()) this.health-=9;
         this.intiative = intiative;
         this.inflictedIiron = inflictedIiron;
-        this.damage = damage;
+        this.damage = (int) inflictedIiron;
         this.money = money;
 
     }
