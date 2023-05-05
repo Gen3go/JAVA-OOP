@@ -5,11 +5,12 @@ import java.util.Random;
 public class Unit implements GameInterface, Comparable{
     protected String name, usedItem;
     protected int health, maxHealth, intiative;
-    protected float inflictedIiron;
-    protected int damage;
+    protected static float inflictedIiron;
+    protected static int damage;
     protected int money;
+    protected Coordinates coordinates;
 
-    public Unit(ArrayList<Unit> team, String name, String usedItem, int health,int money, float inflictedIiron3, float inflictedIiron, float inflictedIiron2) {
+    public Unit(ArrayList<Unit> team, float x, float y) {
         this.team = team;
         this.name = name;
         this.usedItem = usedItem;
@@ -20,6 +21,7 @@ public class Unit implements GameInterface, Comparable{
         this.inflictedIiron = inflictedIiron;
         this.damage = (int) inflictedIiron;
         this.money = money;
+        this.coordinates = new Coordinates(x, y);
 
     }
 
