@@ -4,8 +4,8 @@ public class Unit_robber_witch extends Unit {
 
     protected float magic;
 
-    Unit_robber_witch(ArrayList<Unit> team, String name, String usedItem, int health, int intiative, float inflictedIiron, int damage, int money, float magic){
-        super(team, name, usedItem, health, intiative, inflictedIiron, damage, money);
+    Unit_robber_witch(ArrayList<Unit> team, float x, float y){
+        super(team, name, usedItem, health, intiative, inflictedIiron, damage, money, x, y);
         this.magic = magic;
     }
 
